@@ -1,6 +1,5 @@
 p {
   font-family: "Roboto";
-<<<<<<< HEAD
 }
 .wrapper {
   margin: auto;
@@ -23,6 +22,4 @@ p {
 .menu__item:last-child {
   padding-right: 0;
 }
-=======
-}
->>>>>>> 60470f3a00c559bebd951865c5a63dd32282fbcf
+
