@@ -11,10 +11,6 @@ p {
   justify-content: space-between;
 }
 .logo {
-<<<<<<< HEAD
-=======
-  padding: 40px 0;
->>>>>>> 766fd8576a1d8f3b7a8e70231b2e74c81cc0bba2
   width: 190px;
   height: 35px;
   background: url('img/logo.svg');
