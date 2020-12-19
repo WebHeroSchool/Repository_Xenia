@@ -99,6 +99,7 @@ p {
 .menu__box {
   display: none;
 }
+
 @media(max-width: 768px) {
   .menu {
     display: none;
@@ -112,13 +113,13 @@ p {
     background-size: 74%;
     background-position: top center;
   }
-  .main-title {
+  .main__title {
     margin-bottom: 44px;
-    font: bold 30px/39px "pt_serif"
+    font: bold 55px/65px "pt_serif"
   }
   .main__description {
     margin-bottom: 25px;
-    font: 500 18px/19px "Roboto";
+    font: 500 15px/19px "Roboto";
   }
   .main_button {
     font: 500 20px/18px "Roboto";
