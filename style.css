@@ -99,7 +99,6 @@ p {
 .menu__box {
   display: none;
 }
-
 @media(max-width: 768px) {
   .menu {
     display: none;
@@ -183,7 +182,7 @@ p {
   visibility: hidden;
   top: 0;
   right: -100%;
-  width: 300px;
+  width: 768px;
   height: 100%;
   margin: 0;
   padding: 80px 0;
@@ -194,15 +193,32 @@ p {
 }
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 12px 30px;
   color: #333;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 33px;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .5s;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 .menu__item:hover {
   background-color: #CFD8DC;
 }
+@keyframes flashlight {
+  to {
+    color: black;
+  }
 }
+.main_button:hover {
+  animation: flashlight .5s 5 ease-in-out;
+}
+}
+@media(min-width: 1920px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
