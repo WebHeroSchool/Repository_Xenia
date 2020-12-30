@@ -1,5 +1,5 @@
 p {
-  font-family: "Roboto";
+  font-family: "roboto-regular";
 }
 .wrapper {
   margin: auto;
@@ -41,7 +41,7 @@ p {
 .menu__item {
   margin-right: 26px;
   position: relative;
-  font: 500 18px/21px "Roboto";
+  font: 500 18px/21px "roboto-regular";
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
@@ -78,7 +78,7 @@ p {
 }
 .main__description {
   margin: 0 0 41px 0;
-  font: 22px/26px "Roboto";
+  font: 22px/26px "roboto-regular";
 }
 .main__title-text_highlight {
   background: #ECF3FF
@@ -91,7 +91,7 @@ p {
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
-  font: 18px/15px "Roboto";
+  font: 18px/15px "roboto-regular";
 }
 .main_button:hover {
   opacity: .5;
@@ -99,29 +99,96 @@ p {
 .menu__box {
   display: none;
 }
-@media(max-width: 768px) {
+@media(min-width: 1024px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media(max-width: 1366px) {
+  .wrapper {
+    width: 70%;
+  }
+  .header {
+    margin-bottom: 99px;
+    padding: 34px 0;
+    margin-right: 10px;
+  }
+  .menu__item{
+    font: 500 14px/16px "roboto-regular";
+  }
+  .main__title{
+    margin: 0 0 40px 0;
+    font: 50px/66px "pt_serifbold";
+    width: 434px;
+  }
+  .main__description{
+    margin: 0 0 41px 0;
+    font: 500 18px/21px "roboto-regular";
+    max-width: 367px;
+  }
+  .main_button {
+    padding: 17px 25px;
+    font: 500 14px/16px "roboto-regular";
+  }
+  .main {
+    background-size: 53%;
+  }
+}
+@media(max-width: 1024px) {
+  .wrapper {
+    width: 91%;
+  }
+  .menu__item{
+    font: 500 13px/1px "roboto-regular";
+  }
+  .main__title{
+    margin: 0 0 40px 0;
+    font: 50px/66px "pt_serifbold";
+    width: 434px;
+  }
+  .main__description{
+    margin: 0 0 41px 0;
+    font: 500 17px/21px "roboto-regular";
+    max-width: 367px;
+  }
+  .main_button {
+    padding: 17px 25px;
+    font: 500 14px/18px "roboto-regular";
+  }
+  main {
+    background-size: 52%;
+}
+}
+@media(max-width: 375px) {
   .menu {
     display: none;
   }
+  .wraper {
+    width: 90%;
+  }
   .header {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
   .main {
     text-align: center;
-    padding: 74% 0 0; 
+    padding: 68% 0 0; 
     background-size: 74%;
     background-position: top center;
   }
   .main__title {
-    margin-bottom: 44px;
-    font: bold 55px/65px "pt_serif"
+    padding-bottom: 30px;
+    margin: 0 0 10px 0;
+    font: 31px/39px "pt_serifbold";
+    width: 340px;
   }
   .main__description {
-    margin-bottom: 25px;
-    font: 500 15px/19px "Roboto";
+    padding: 0 0 15px 28px;
+    margin-bottom: 9px;
+    font: 500 16px/18px "roboto-regular";
+    width: 250px;
   }
   .main_button {
-    font: 500 20px/18px "Roboto";
+    font: 500 14px/16px "roboto-regular";
   }
   .logo_text {
     display: none;
@@ -182,27 +249,28 @@ p {
   visibility: hidden;
   top: 0;
   right: -100%;
-  width: 768px;
+  width: 375px;
   height: 100%;
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #C8DBFB;
+  background-color: #E5E5E5;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   transition-duration: .25s;
 }
 .menu__item {
+  position: relative;
   display: block;
   padding: 12px 30px;
   color: #333;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'roboto-regular', sans-serif;
   font-size: 33px;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .5s;
   text-align: center;
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .menu__item:hover {
   background-color: #CFD8DC;
@@ -216,9 +284,6 @@ p {
   animation: flashlight .5s 5 ease-in-out;
 }
 }
-@media(min-width: 1920px) {
-  .hamburger-menu {
-    display: none;
-  }
-}
+
+
 
